@@ -1,0 +1,45 @@
+<html>
+<h1> <center> JAVASCRIPT BULB ANIMATION </center></h1>
+
+<center><img id="myImage" onclick="changeImage()"
+src="bulboff.jpg" width="300px" height="300px">
+</img></center>
+
+
+<script>
+function changeImage()
+{
+var image = document.getElementById('myImage');
+if(image.src.match("bulbon"))
+{
+image.src="bulboff.jpg";
+}
+else
+{
+image.src="bulbon.jpg";
+}
+}
+</script>
+
+<html>
+<h1> <center> JAVASCRIPT FACE ANIMATION </center></h1>
+
+<center><img id="myImage2" onclick="changeImage2()"
+src="sad.jpg" width="300px" height="300px">
+</img></center>
+
+
+<script>
+function changeImage2()
+{
+var image = document.getElementById('myImage2');
+if(image.src.match("happy"))
+{
+image.src="sad.jpg";
+}
+else
+{
+image.src="happy.jpg";
+}
+}
+</script>
